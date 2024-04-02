@@ -1,7 +1,8 @@
 
 import os
-#You'll need to place your openAI Key here
-os.environ['OPENAI_API_KEY']=''
+#Program will request your own API key here.
+key = input("Please enter your API key: ")
+os.environ['OPENAI_API_KEY']=key
 #import wandb
 from openai import OpenAI
 client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
